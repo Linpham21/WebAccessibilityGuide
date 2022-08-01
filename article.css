@@ -69,7 +69,13 @@ main {
 
 #side-nav ul li a {
     font-size: 2rem;
-} 
+    text-decoration: none;
+    color: black;
+}
+
+a, a:visted, a:hover, a:active {
+    color: inherit;
+}
 
 #access-btns {
     display: flex;
@@ -126,4 +132,8 @@ span {
 
 .dark-mode-main {
     background-color: rgb(27, 73, 101);
+}
+
+h3 {
+    font-size: 4rem;
 }
