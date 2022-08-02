@@ -114,6 +114,7 @@ main {
     padding-top: 30px;
     overflow-y: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 #content h2 {
