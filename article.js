@@ -60,9 +60,11 @@ let light = {
 let selectedMode = dark
 */
 
-
 let toggleDarkMode = function() {
     let header = document.querySelector("header");
     let side_nav = document.getElementById("side-nav");
     let main = document.getElementById("main");
 }
+
+let dmButton = document.querySelector("button#color-toggle-btn");
+dmButton.addEventListener("click", toggleDarkMode);

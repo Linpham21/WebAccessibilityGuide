@@ -15,34 +15,53 @@ html {
 
 header {
     width: 100%;
-    height: 10rem;
-    padding-top: 2rem;
-    padding-left: 15%;
-    padding-right: 5%;
-    background-color: rgb(102, 102, 102);
+    height: 6rem;
+    padding-top: 1.5rem;
+    padding-left: 10%;
+    background-color: rgb(238, 238, 238);
 }
 
 /***** TOP NAV *****/
 
 #top-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 #top-nav button {
-    width: 50px;
-    height: 50px;
-    border-radius: 3rem;
+    width: 75px;
+    height: 25px;
 }
 
 #top-nav select {
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
+
+#top-nav ul {
+    display: flex;
+    width: 100%;
+}
+
+#top-nav li {
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#top-nav li a {
+    text-decoration: none;
+    color: black;
 }
 
 /***** MAIN *****/
+
+body {
+    margin: 0;
+    padding: 0;
+}
 
 main {
     display: flex;
@@ -54,21 +73,21 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     width: 12%;
-    padding: 30px;
-    padding-left: 40px;
-    background-color: rgb(238, 238, 238);
-}
-
-#side-nav ul {
+    background-color: rgb(102, 102, 102);
     position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 99;
+    padding-top: 100px;
 }
 
 #side-nav ul li {
     list-style: none;
-    margin-bottom: 2rem;
-    height: 30px;
+    margin: 2rem 0;
+    height: 3rem;
 }
 
 #side-nav ul li:hover {
@@ -78,24 +97,23 @@ main {
 #side-nav ul li a {
     font-size: 2rem;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 
 /***** ACESSABILITY ASIDE *****/
 
 #access-btns {
+    width: 10%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #access-btns select {
     margin-top: 1rem;
-    margin-left: 1rem;
 }
 
 #text-to-speech-btn {
-    margin-top: 25px;
-    margin-left: 25px;
     height: 100px;
     width: 100px;
 }
@@ -108,10 +126,11 @@ main {
 /***** CONTENT SECTION *****/
 
 #content {
-    width: 75%;
-    height: 860px;
-    padding: 60px;
-    padding-top: 30px;
+    width: 85%;
+    height: 100vh;
+    padding: 6rem;
+    padding-top: 2rem;
+    padding-left: 15%;
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -123,52 +142,7 @@ main {
 
 #content p {
     font-size: 2rem;
-    padding-bottom: 2rem;
-}
-
-/***** QUIZ SECTION *****/
-
-.quiz {
-    display: flex;
-}
-
-.topic {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(230, 230, 230);
-    width: 250px;
-    height: 200px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-span {
-    background-color: yellow;
-    text-decoration: underline dotted;
-}
-
-.right-square {
-    height: 500px;
-    width: 600px;
-    margin-top: 10px;
-    background-color: rgb(230, 230, 230);
-    border-radius: 10px;
-    margin-left: 75px;
-}
-
-#person {
-    margin-top: 50px;
-    margin-left: 50px;
-    height: 163px;
-    width: 248px;
-}
-
-#monitor {
-    width: 283px;
-    height: 154px;
-    margin-left: 250px;
-    margin-top: 100px;
+    padding: 1.5rem 0.5rem;
 }
 
 /***** FONTS AND HEADERS *****/
@@ -187,4 +161,15 @@ h5 {
 
 a, a:visted, a:hover, a:active {
     color: inherit;
+}
+
+span {
+    background-color: yellow;
+    text-decoration: underline dotted;
+}
+
+/***** ETC *****/
+
+.hidden {
+    display: none;
 }
