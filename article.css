@@ -11,6 +11,10 @@ html {
     background-color: white;
 }
 
+a {
+    all: unset;
+}
+
 /***** HEADER *****/
 
 header {
@@ -18,7 +22,7 @@ header {
     height: 6vh;
     padding-top: 1.5rem;
     padding-left: 10%;
-    background-color: rgb(238, 238, 238);
+    background-color: #666666;
 }
 
 /***** TOP NAV *****/
@@ -53,7 +57,12 @@ header {
 
 #top-nav li a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+}
+
+#top-nav button {
+    background-color: #1b4965;
+    color: #ffffff;
 }
 
 /***** MAIN *****/
@@ -76,10 +85,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     width: 12%;
-    background-color: rgb(102, 102, 102);
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: #eeeeee;
     height: 100%;
     z-index: 99;
     padding-top: 100px;
@@ -89,16 +95,18 @@ main {
     list-style: none;
     margin: 2rem 0;
     height: 3rem;
+    padding-left: 2rem;
 }
 
 #side-nav ul li:hover {
-    background-color: yellow;
+    border: solid #595959;
+    border-width: 0 0 0 3px;
+    font-weight: bold;
 } 
 
 #side-nav ul li a {
     font-size: 2rem;
     text-decoration: none;
-    color: #ffffff;
 }
 
 /***** ACESSABILITY ASIDE *****/
@@ -128,10 +136,8 @@ main {
 
 #content {
     width: 85%;
-    /* height: 100vh; */
     padding: 6rem;
     padding-top: 2rem;
-    padding-left: 15%;
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -172,5 +178,5 @@ span {
 /***** ETC *****/
 
 .hidden {
-    display: none;
+    display: none !important;
 }
