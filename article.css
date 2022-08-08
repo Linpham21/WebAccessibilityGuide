@@ -21,7 +21,6 @@ header {
     width: 100%;
     height: 6vh;
     padding-top: 1.5rem;
-    padding-left: 10%;
     background-color: #666666;
 }
 
@@ -89,6 +88,7 @@ main {
     height: 100%;
     z-index: 99;
     padding-top: 100px;
+    transition-timing-function: ease;
 }
 
 #side-nav ul li {
@@ -107,6 +107,12 @@ main {
 #side-nav ul li a {
     font-size: 2rem;
     text-decoration: none;
+}
+
+#side-nav-arrow {
+    position: fixed;
+    z-index: 1000;
+    padding-left: 2rem;
 }
 
 /***** ACESSABILITY ASIDE *****/
