@@ -83,7 +83,7 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 400px;
+    width: 300px;
     background-color: #eeeeee;
     height: 100%;
     z-index: 99;
@@ -146,6 +146,7 @@ main {
     overflow-x: hidden;
     scroll-behavior: smooth;
     color: black;
+    width: calc(100% - 300px);
 }
 
 #content h2 {
