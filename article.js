@@ -3,12 +3,11 @@ const leftArrowPath = `M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125
 
 let side_nav = document.querySelector("#side-nav");
 let closeSideNavBtn = document.querySelector("#side-nav-arrow svg");
-let header = document.querySelector("header"); // This is top_nav_bar
+let header = document.querySelector("header");
 let main = document.querySelector("main");
 let top_nav_button = document.querySelector("#top-nav button");
-let top_nav_bar_text = document.querySelector("#top-nav li a");
+let top_nav_bar_text = document.querySelectorAll("#top-nav li a");
 let dmButton = document.querySelector("button#color-toggle-btn");
-// let side_nav_border = document.querySelector("#side-nav ul li:hover");
 let content = document.querySelector("#content");
 
 let darkOn = false;
@@ -26,12 +25,12 @@ let dark = {
 }
 
 let light = {
-    top_nav_bar: "#666666",
-    top_nav_bar_text: "#ffffff",
+    top_nav_bar: "#F5F5F5",
+    top_nav_bar_text: "#1F1F1F",
     mode_button: "#999999",
     mode_button_text: "#ffffff",
-    side_nav_bar: "#eeeeee",
-    side_nav_bar_text: "#000000",
+    side_nav_bar: "#000000",
+    side_nav_bar_text: "#ffffff",
     side_nav_bar_border: "#595959",
     article_text: "#000000",
     content_background: "#FFFFFF"
@@ -52,12 +51,15 @@ let toggleDarkMode = function () {
     }
 
     header.style.backgroundColor = currentColorMode.top_nav_bar;
-    header.style.color = currentColorMode.top_nav_bar_text;
+
+    for (let i = 0; i < top_nav_bar_text.length; i++) {
+        top_nav_bar_text[i].style.color = currentColorMode.top_nav_bar_text;
+    }
+
     dmButton.style.backgroundColor = currentColorMode.mode_button;
     dmButton.style.color = currentColorMode.mode_button_text;
     side_nav.style.backgroundColor = currentColorMode.side_nav_bar;
     side_nav.style.color = currentColorMode.side_nav_bar_text;
-    // side_nav_border.color = currentColorMode.side_nav_bar_border;
     main.style.backgroundColor = currentColorMode.main;
     content.style.backgroundColor = currentColorMode.content_background;
     content.style.color = currentColorMode.article_text;
