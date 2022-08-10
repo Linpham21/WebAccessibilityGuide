@@ -17,11 +17,12 @@ let dark = {
     top_nav_bar_text: "#ffffff",
     mode_button: "#1b4965",
     mode_button_text: "#ffffff",
-    side_nav_bar: "#003049",
-    side_nav_bar_text: "#cae9ff",
-    side_nav_bar_border: "#669bbc",
-    article_text: "#cae9ff",
-    content_background: "#1b4965"
+    // side_nav_bar: "#003049",
+    // side_nav_bar_text: "#cae9ff",
+    // side_nav_bar_border: "#669bbc",
+    article_text: "#FFFFFF",
+    content_background: "#162F32",
+    mode_text_content: "Light Mode"
 }
 
 let light = {
@@ -29,11 +30,12 @@ let light = {
     top_nav_bar_text: "#1F1F1F",
     mode_button: "#999999",
     mode_button_text: "#ffffff",
-    side_nav_bar: "#000000",
-    side_nav_bar_text: "#ffffff",
-    side_nav_bar_border: "#595959",
+    // side_nav_bar: "#000000",
+    // side_nav_bar_text: "#ffffff",
+    // side_nav_bar_border: "#595959",
     article_text: "#000000",
-    content_background: "#FFFFFF"
+    content_background: "#FFFFFF",
+    mode_text_content: "Dark Mode"
 }
 
 let currentColorMode = darkOn == true ? dark : light
@@ -58,6 +60,7 @@ let toggleDarkMode = function () {
 
     dmButton.style.backgroundColor = currentColorMode.mode_button;
     dmButton.style.color = currentColorMode.mode_button_text;
+    dmButton.textContent = currentColorMode.mode_text_content;
     side_nav.style.backgroundColor = currentColorMode.side_nav_bar;
     side_nav.style.color = currentColorMode.side_nav_bar_text;
     main.style.backgroundColor = currentColorMode.main;
