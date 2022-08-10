@@ -33,11 +33,6 @@ header {
     align-items: center;
 }
 
-#top-nav button {
-    width: 75px;
-    height: 25px;
-}
-
 #top-nav select {
     width: 100px;
     height: 30px;
@@ -67,12 +62,6 @@ header {
     color: #000;
 }
 
-#top-nav button {
-    background-color: #999999;
-    color: #ffffff;
-    border: none;
-}
-
 /***** MAIN *****/
 
 body {
@@ -82,7 +71,7 @@ body {
 
 main {
     display: flex;
-    height: 93vh;
+    height: 94vh;
 }
 
 #content h2 {
@@ -134,13 +123,19 @@ main {
 
 #side-nav-arrow {
     position: fixed;
+    z-index: 1000;
+    padding-left: 2rem;
 }
 
-#side-nav-arrow svg {
+#side-nav button {
+    width: 100px;
+    height: 25px;
+    background-color: #999999;
     color: #ffffff;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 2rem;
 }
-
-/***** ACCESSIBILITY ASIDE *****/
 
 #access-btns {
     width: 10%;
@@ -152,23 +147,13 @@ main {
 
 #access-btns select {
     margin-top: 1rem;
-}
-
-#text-to-speech-btn {
-    height: 100px;
-    width: 100px;
-}
-
-#text-to-speech-btn img {
-    height: 80px;
-    width: 80px;
+    margin-left: 2rem;
 }
 
 /***** CONTENT SECTION *****/
 
 #content {
-    padding: 6rem;
-    padding-top: 2rem;
+    padding: 7rem 30rem 5rem 5rem;
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -244,4 +229,9 @@ span {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+/* TABLES and Below*/
+@media only screen and (max-width : 768px) {
+
 }

@@ -9,6 +9,10 @@ let top_nav_button = document.querySelector("#top-nav button");
 let top_nav_bar_text = document.querySelectorAll("#top-nav li a");
 let dmButton = document.querySelector("button#color-toggle-btn");
 let content = document.querySelector("#content");
+let headings = document.querySelectorAll("#content h3");
+let bigger_headings = document.querySelector("#content h2");
+let spans = document.querySelectorAll("#content span");
+let caption_background = document.querySelectorAll("figcaption");
 
 let darkOn = false;
 
@@ -22,7 +26,10 @@ let dark = {
     // side_nav_bar_border: "#669bbc",
     article_text: "#FFFFFF",
     content_background: "#162F32",
-    mode_text_content: "Light Mode"
+    mode_text_content: "Light Mode",
+    headings: "#B8B7B7",
+    spans: "#001219",
+    caption_background: "#001219"
 }
 
 let light = {
@@ -35,12 +42,13 @@ let light = {
     // side_nav_bar_border: "#595959",
     article_text: "#000000",
     content_background: "#FFFFFF",
-    mode_text_content: "Dark Mode"
+    mode_text_content: "Dark Mode",
+    headings: "#767474",
+    spans: "#B8DEE0",
+    caption_background: "#dbd7d7"
 }
 
 let currentColorMode = darkOn == true ? dark : light
-
-console.log(content)
 
 let toggleDarkMode = function () {
     if (darkOn === false) {
@@ -66,17 +74,35 @@ let toggleDarkMode = function () {
     main.style.backgroundColor = currentColorMode.main;
     content.style.backgroundColor = currentColorMode.content_background;
     content.style.color = currentColorMode.article_text;
+    bigger_headings.style.color = currentColorMode.headings;
 
+    for (let i = 0; i < headings.length; i++) {
+        headings[i].style.color = currentColorMode.headings;
+    }
+
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].style.backgroundColor = currentColorMode.spans;
+    }
+
+    for (let i = 0; i < caption_background.length; i++) {
+        caption_background[i].style.backgroundColor = currentColorMode.caption_background;
+    }
 }
 
 function toggleMenu() {
     let path = document.querySelector("#side-nav-arrow svg path");
+    let svg = document.querySelector("#side-nav-arrow svg");
+    console.log(path);
     if (side_nav.classList.contains("hidden")) {
         side_nav.classList.remove("hidden");
         path.setAttribute("d", leftArrowPath);
+        svg.setAttribute("fill", "white");
+        content.style.width = "calc(100% - 300px)";
     } else {
         side_nav.classList.add("hidden");
         path.setAttribute("d", rightArrowPath);
+        svg.setAttribute("fill", "black");
+        content.style.width = "100%";
     }
 }
 
