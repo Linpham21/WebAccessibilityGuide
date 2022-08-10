@@ -4,6 +4,7 @@
         <title> Article Mockup </title>
         <link rel="stylesheet" href="article.css" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -40,18 +41,39 @@
                 <br><br>
                 <h4>Accessibility Tools</h4>
                 <div id="access-btns">
-                    <select id="font-size-select">
-                        <option value="10px" selected>Font Size: 10px</option>
-                        <option value="15px">Font Size: 15px</option>
-                        <option value="20px">Font Size: 20px</option>
-                        <option value="25px">Font Size: 25px</option>
-                    </select>
-                    <select id="font-style-select">
-                        <option value="ntr" selected>New Times Roman</option>
-                        <option value="tah">Tahoma</option>
-                        <option value="ari">Arial</option>
-                        <option value="ver">Verdana</option>
-                    </select>
+                    <h5>Font Family</h5>
+                    <div id="font-family-btns">
+                        <button id="open-sans-btn">
+                            <h5>Ag</h5>
+                            <p>Open Sans</p>
+                        </button>
+                        <button id="georgia-btn">
+                            <h5>Ag</h5>
+                            <p>Georgia</p>
+                        </button>
+                        <button id="arvo-btn">
+                            <h5>Ag</h5>
+                            <p>Arvo</p>
+                        </button>
+                    </div>
+
+                    <h5>Font Size</h5>
+                    <div id="font-size-btns">
+                        <button id="font-small-btn">
+                            <h5>1x</h5>
+                            <p>Normal</p>
+                        </button>
+                        <button id="font-large-btn">
+                            <h5>1.3x</h5>
+                            <p>Larger</p>
+                        </button>
+                        <button id="font-largest-btn">
+                            <h5>1.5x</h5>
+                            <p>Largest</p>
+                        </button>
+                    </div>
+
+                    <h5>Theme</h5>
                     <button class="mode_button_text" id="color-toggle-btn">Dark Mode</button>
                 </div>
             </nav>

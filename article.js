@@ -106,6 +106,69 @@ function toggleMenu() {
     }
 }
 
-dmButton.addEventListener("click", toggleDarkMode);
+function changeFontFamily(family) {
+    let html = document.querySelector("html");
+    if (family == "open-sans") {
+        html.style.fontFamily = "'Open Sans', Arial, sans-serif";
+    } else if (family == "georgia") {
+        html.style.fontFamily = "Georgia, serif";
+    } else {
+        html.style.fontFamily = "'Arvo', serif";
+    }
+}
 
+function changeFontSize(size) {
+    let content_p = document.querySelectorAll("#content p");
+    let side_nav_a = document.querySelectorAll("#side-nav ul li a");
+    let figcap = document.querySelectorAll("figcaption");
+    for (let i = 0; i < content_p.length; i++) {
+        content_p[i].style.fontSize = size;
+    }
+    for (let i = 0; i < side_nav_a.length; i++) {
+        side_nav_a[i].style.fontSize = size;
+    }
+    let article_size = "1.5rem";
+    if (size == "2.6rem") {
+        article_size = "1.95rem";
+    } else if (size == "3rem") {
+        article_size = "2.25rem";
+    }
+    for (let i = 0; i < figcap.length; i++) {
+       figcap[i].style.fontSize = article_size;
+    }
+}
+
+dmButton.addEventListener("click", toggleDarkMode);
 closeSideNavBtn.addEventListener("click", toggleMenu);
+
+let open_sans_btn = document.querySelector("#open-sans-btn");
+let georgia_btn = document.querySelector("#georgia-btn");
+let arvo_btn = document.querySelector("#arvo-btn");
+
+open_sans_btn.addEventListener("click", () => {
+    changeFontFamily("open-sans");
+});
+
+georgia_btn.addEventListener("click", () => {
+    changeFontFamily("georgia");
+});
+
+arvo_btn.addEventListener("click", () => {
+    changeFontFamily("arvo");
+});
+
+let normal_font_btn = document.querySelector("#font-small-btn");
+let large_font_btn = document.querySelector("#font-large-btn");
+let largest_font_btn = document.querySelector("#font-largest-btn");
+
+normal_font_btn.addEventListener("click", () => {
+    changeFontSize("2rem");
+});
+
+large_font_btn.addEventListener("click", () => {
+    changeFontSize("2.6rem");
+});
+
+largest_font_btn.addEventListener("click", () => {
+    changeFontSize("3rem");
+});

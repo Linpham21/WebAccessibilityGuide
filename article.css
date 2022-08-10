@@ -127,7 +127,7 @@ main {
     padding-left: 2rem;
 }
 
-#side-nav button {
+#color-toggle-btn {
     width: 100px;
     height: 25px;
     background-color: #999999;
@@ -138,16 +138,46 @@ main {
 }
 
 #access-btns {
-    width: 10%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 2rem;
+    margin-top: 2rem;
 }
 
-#access-btns select {
-    margin-top: 1rem;
-    margin-left: 2rem;
+#font-family-btns, #font-size-btns {
+    display: flex;
+    flex-direction: row;
+}
+
+#font-family-btns button, #font-size-btns button {
+    height: 76px;
+    width: 76px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+#open-sans-btn {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#georgia-btn {
+    font-family: Georgia, serif;
+}
+
+#arvo-btn {
+    font-family: 'Arvo';
+}
+
+#font-small-btn, #font-large-btn, #font-largest-btn {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#font-large-btn h5{
+    font-size: 2.6rem;
+}
+
+#font-largest-btn h5 {
+    font-size: 3rem;
 }
 
 /***** CONTENT SECTION *****/
@@ -192,7 +222,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 a, a:visted, a:hover, a:active {
