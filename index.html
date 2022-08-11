@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
+     
+    <!--fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:semibold" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Niramit' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
 </head>
 <body>
     <header>
@@ -27,32 +33,33 @@
 
     <main>
         <div id="accessibilityHeader">
-            <div id="accessibilityImgContainer">
+            <div id="anotherContainer">
+                <div id="accessibilityImgContainer">
+                        <img id="accessibilityImg" src="imgs/accessibility.jpg" alt="Image of all types of people, 
+                ranging from different accessibility identities">
+                        <rect id="overlay"></rect>
+                </div>
                 <div id="containerForWords">
-                    <img id="accessibilityImg" src="imgs/accessibility.jpg" alt="Image of all types of people, 
-            ranging from different accessibility identities">
                     <h1 id="firstLine">Being more accessible.</h1>
                     <h1 id="secondLine">Learn how in web dev.</h1>
                 </div>
+                <rect id="overlay"></rect>
             </div>
 
-            <rect id="overlay"></rect>
         </div>
 
 
         <div id="homePage_btn">
-            <a href="article.html"><button>LEARN MORE</button>
+            <a href="article.html"><button>LEARN MORE</button></a>
         </div>
 
         <div id="content">
-            <p class="homePage_text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                In sollicitudin nec lacus aliquam varius. Aenean libero sapien,
-                tempor non lacinia eget, consectetur eu lorem. In volutpat tempor 
-                purus tempus rhoncus. <span>Nulla</span> a cursus nisi. In sollicitudin 
-                nec lacus aliquam varius. Aenean libero sapien,
-                tempor non lacinia eget, consectetur eu lorem. In volutpat tempor 
-                purus tempus rhoncus. <span>Nulla</span> a cursus nisi. 
+            <p id="HomePageText">
+                When websites and web tools are properly designed and coded, people with disabilities 
+                can use them. However, when web developers are not aware of how they can make their websites 
+                and tools accessible, there may be barriers that make them difficult or impossible for some 
+                people to use. There are many types of web accessibility, such as motor accessibility, visual 
+                accessibility, and audio accessibility. Explore our website to learn more.
             </p>
         </div>
 
