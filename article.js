@@ -21,9 +21,6 @@ let dark = {
     top_nav_bar_text: "#ffffff",
     mode_button: "#1b4965",
     mode_button_text: "#ffffff",
-    // side_nav_bar: "#003049",
-    // side_nav_bar_text: "#cae9ff",
-    // side_nav_bar_border: "#669bbc",
     article_text: "#FFFFFF",
     content_background: "#162F32",
     mode_text_content: "Light Mode",
@@ -37,9 +34,6 @@ let light = {
     top_nav_bar_text: "#1F1F1F",
     mode_button: "#999999",
     mode_button_text: "#ffffff",
-    // side_nav_bar: "#000000",
-    // side_nav_bar_text: "#ffffff",
-    // side_nav_bar_border: "#595959",
     article_text: "#000000",
     content_background: "#FFFFFF",
     mode_text_content: "Dark Mode",
@@ -98,16 +92,12 @@ function toggleMenu() {
         side_nav.classList.remove("hidden");
         path.setAttribute("d", leftArrowPath);
         svg.setAttribute("fill", "white");
-        content.style.width = "calc(100% - 300px)";
-        content.style.margin = "0px 0px 0px 300px";
     } else {
         side_nav.classList.add("hidden");
         path.setAttribute("d", rightArrowPath);
         if (!darkOn) {
             svg.setAttribute("fill", "black");
         }
-        content.style.width = "100%";
-        content.style.margin = "0px 0px 0px 0px";
     }
 }
 
