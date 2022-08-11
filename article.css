@@ -130,11 +130,16 @@ main {
 #color-toggle-btn {
     width: 100px;
     height: 25px;
-    background-color: #999999;
+    background-color: #000;
     color: #ffffff;
     border: none;
     margin-top: 1rem;
-    margin-left: 2rem;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#color-toggle-btn:hover {
+    background-color: #1F1F1F;
+    border-radius: 5px;
 }
 
 #access-btns {
@@ -170,6 +175,23 @@ main {
 
 #font-small-btn, #font-large-btn, #font-largest-btn {
     font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #000;
+    color: #ffffff;
+}
+
+#font-small-btn:hover, #font-large-btn:hover, #font-largest-btn:hover {
+    background-color: #1F1F1F;
+    border-radius: 5px;
+}
+
+#open-sans-btn, #georgia-btn, #arvo-btn {
+    background-color: #000;
+    color: white;
+}
+
+#open-sans-btn:hover, #georgia-btn:hover, #arvo-btn:hover {
+    background-color: #1F1F1F;
+    border-radius: 5px;
 }
 
 #font-large-btn h5{
