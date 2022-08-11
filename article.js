@@ -13,6 +13,7 @@ let headings = document.querySelectorAll("#content h3");
 let bigger_headings = document.querySelector("#content h2");
 let spans = document.querySelectorAll("#content span");
 let caption_background = document.querySelectorAll("figcaption");
+let html = document.querySelector("html");
 
 let darkOn = false;
 
@@ -70,6 +71,7 @@ let toggleDarkMode = function () {
     content.style.color = currentColorMode.article_text;
     bigger_headings.style.color = currentColorMode.headings;
     main.style.backgroundColor = currentColorMode.content_background;
+    html.style.backgroundColor = currentColorMode.content_background;
 
     for (let i = 0; i < headings.length; i++) {
         headings[i].style.color = currentColorMode.headings;
