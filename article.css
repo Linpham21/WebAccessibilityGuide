@@ -134,7 +134,7 @@ main {
 #color-toggle-btn {
     width: 10rem;
     height: 2.5rem;
-    background-color: #000;
+    background-color: rgb(153, 153, 153);
     color: #ffffff;
     border: none;
     margin-top: 1rem;
