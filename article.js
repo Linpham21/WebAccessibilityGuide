@@ -75,6 +75,7 @@ let toggleDarkMode = function () {
     content.style.backgroundColor = currentColorMode.content_background;
     content.style.color = currentColorMode.article_text;
     bigger_headings.style.color = currentColorMode.headings;
+    main.style.backgroundColor = currentColorMode.content_background;
 
     for (let i = 0; i < headings.length; i++) {
         headings[i].style.color = currentColorMode.headings;
@@ -98,11 +99,15 @@ function toggleMenu() {
         path.setAttribute("d", leftArrowPath);
         svg.setAttribute("fill", "white");
         content.style.width = "calc(100% - 300px)";
+        content.style.margin = "0px 0px 0px 300px";
     } else {
         side_nav.classList.add("hidden");
         path.setAttribute("d", rightArrowPath);
-        svg.setAttribute("fill", "black");
+        if (!darkOn) {
+            svg.setAttribute("fill", "black");
+        }
         content.style.width = "100%";
+        content.style.margin = "0px 0px 0px 0px";
     }
 }
 
