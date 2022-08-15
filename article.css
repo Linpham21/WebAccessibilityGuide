@@ -95,6 +95,7 @@ main {
     color: #ffffff;
     padding-left: 1.5rem;
     position: fixed;
+    overflow: auto;
 }
 
 #side-nav h4 {
@@ -249,6 +250,15 @@ figcaption {
     width: 80%;
     font-size: 1.5rem;
     padding: 1.5rem;
+}
+
+#transcript-example {
+    width: 80%;
+    background-color: #F5F5F5;
+}
+
+#transcript-example h5 {
+    color: #b8dee0;
 }
 
 /***** FONTS AND HEADERS *****/

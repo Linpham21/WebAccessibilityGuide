@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Audio Accessibility </title>
+        <link rel="stylesheet" href="article.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav id="top-nav">
+                <select id="top-nav-drop-down" class="hidden">
+                    <option class="top_nav_bar_text" value="Home">Home</option>
+                    <option class="top_nav_bar_text" value="Accessibility Basics">Accessibility Basics</option>
+                    <option class="top_nav_bar_text" value="Audio Accessibility">Audio Accessibility</option>
+                    <option class="top_nav_bar_text" value="Visual Accessibility">Visual Accessibility</option>
+                </select>
+                <li><a href="index.html">Home &#8599</a></li>
+                <li><a href="basic.html">Basics &#8599</a></li>
+                <li><a href="visual.html">Visual &#8599</a></li>
+                <li><a href="audio.html">Audio &#8599</a></li>
+                <li><a href="motor.html">Motor &#8599</a></li>
+            </nav>
+        </header>
+
+        <main>
+            <div id="side-nav-arrow">
+                <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="40px"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"/></svg>
+            </div>
+
+            <nav id="side-nav">
+                <h4>Title of Article&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                <ul>
+                    <li><a href="#Audio">Audio</a></li>
+                    <li><a href="#Who">Who</a></li>
+                    <li><a href="#Overview">Overview</a></li>
+                    <li><a href="#Transcripts">Transcripts</a></li>
+                    <li><a href="#Captions">Captions</a></li>
+                    <li><a href="#Media-Player">Media Player</a></li>
+                    <li><a href="#Vocab">Vocab</a></li>
+                    <li><a href="#Ref">References</a></li>
+                </ul>
+                <br><br>
+                <h4>Accessibility Tools</h4>
+                <div id="access-btns">
+                    <h5>Font Style</h5>
+                    <div id="font-family-btns">
+                        <button id="open-sans-btn">
+                            <h5>Ag</h5>
+                            <p>Open Sans</p>
+                        </button>
+                        <button id="georgia-btn">
+                            <h5>Ag</h5>
+                            <p>Georgia</p>
+                        </button>
+                        <button id="arvo-btn">
+                            <h5>Ag</h5>
+                            <p>Arvo</p>
+                        </button>
+                    </div>
+
+                    <h5>Font Size</h5>
+                    <div id="font-size-btns">
+                        <button id="font-small-btn">
+                            <h5>1x</h5>
+                            <p>Normal</p>
+                        </button>
+                        <button id="font-large-btn">
+                            <h5>1.3x</h5>
+                            <p>Larger</p>
+                        </button>
+                        <button id="font-largest-btn">
+                            <h5>1.5x</h5>
+                            <p>Largest</p>
+                        </button>
+                    </div>
+
+                    <h5>Theme</h5>
+                    <button class="mode_button_text" id="color-toggle-btn">Dark Mode</button>
+                </div>
+            </nav>
+            
+            <div id="content">
+                <h2 id="Audio">Audio</h2>
+                <p class="article_text">
+                    With over 450 million people in the world with hearing disability, 
+                    having your website accessible to those with hearing disability is essential. 
+                    Designing an experience accessible to the hearing impared is challenging and 
+                    given that audio elements are usually paired together with visual elements, 
+                    knowing how to be accessible to the visually impared is also likely required. 
+                    This article will walk through the basics of audio accessibility with respect 
+                    to audio only experiences.
+                </p>
+
+                <figure>
+                    <picture>
+                        <img src="https://juvairiyyapatel2017ualfad.files.wordpress.com/2017/10/img_2206-1.jpg?w=503&h=471" alt="Deaf Culture Sign Language" style="width:80%;">
+                    </picture>
+                    <figcaption>'Cup' by Chuck Baird</figcaption>
+                </figure>
+
+                <h3 id="Who">Who</h3>
+                <p class="article_text">
+                    Those most benefiting to an audio accessible website experience includes but not limited to:
+                </p>
+                <ul>
+                    <li>Those who were born or lived most of their lives with hearing loss (Deaf)</li>
+                    <li>People who lost hearing ability later in life (deaf)</li>
+                    <li>
+                        Individuals who have recently lost some or all ability to sense 
+                        audio either temporarily or permanently
+                    </li>
+                </ul>
+                <br><br><br>
+
+                <h3 id="Overview">Overview</h3>
+                <p class="article_text">
+                    Examples of elements that enhance audio accessibility are:
+                </p>
+                <ul>
+                    <li>Transcripts</li>
+                    <li>Captions</li>
+                    <li>Sign Language</li>
+                </ul> <br><br><br>
+
+                <h3 id="Transcripts">Transcripts</h3>
+                <p class="article_text">
+                    Transcripts can be <a href="#basic-transcripts"><span>basic transcripts</span></a> or <a href="#descriptive-transcripts"><span>descriptive transcripts.</span></a> Basic transcripts 
+                    can be used for media that doesn’t require the user to comprehend the visual elements 
+                    to understand the content of said media, while descriptive transcripts should be used 
+                    otherwise. <a href="#interactive transcripts"><span>Interactive transcripts</span></a> are usually good for accessibility and are common 
+                    among media players. The process of <a href="#transcribing"><span>transcribing</span></a> is not an easy skill and it is <a href="#paramount"><span>paramount</span></a>
+                    that visual information is included in the transcripts if applicable. How transcripts 
+                    are added to the website experiences varies, but inserted as html is common.
+                </p> 
+                <figure>
+                    <div id="transcript-example">
+                        <h5>Example Transcript</h5>
+                        <p>
+                            [Scene]: It was a windy day in 2011 midwestern Ohio. The wrisp and hustle
+                            of the road of a typical weekday morning is present. You stand there about
+                            to get into your car and then your neighbour comes up to you.
+                        </p>
+                        <p>
+                            Henry Willy: Hey neighbour! Sorry to ask but do you have any spare milk?
+                            I'm starving right now and cereal is the only food we have.
+                        </p>
+                        <p> 
+                            Me: No
+                        </p>
+                        <p>
+                            Henry Willy: Ah okay, I'll just head to the market right now to pick up
+                            some milk.
+                        </p>
+                    </div>
+                    <figcaption>Example of Simple Transcript</figcaption>
+                </figure>
+                <br><br><br>
+
+                <h3 id="Captions">Captions</h3>
+                <p class="article_text">
+                    Captions are different from transcripts because captions are visual 
+                    representations of the media relayed to the user in real time in relation 
+                    to the media while transcripts are comprehensive visual representations of the 
+                    media that is not real time. Typically creating captions is a demanding task and 
+                    usually handled by <a href="#third-party"><span>third-party</span></a> professional caption companies. <a href="#auto-generated"><span>Auto generated</span></a>
+                    captions are almost always not sufficient to be accessible because even a single 
+                    misplaced word (like the word not) can significantly misrepresent the content of 
+                    the media. WebVTT is a common caption format but there are also others out there.
+                </p> <br><br><br>
+
+                <h3 id="Sign-Language">Sign Langauage</h3>
+                <p class="article_text">
+                    For many hearing impared individuals (especially the Deaf), 
+                    sign language is how they communicate. Sign language is a way for the audio 
+                    aspect of a media to be portrayed visually and there are many types of 
+                    sign languages out there. Typically someone communicating in sign language is 
+                    either played in a popup that runs in parallel with the video, or is part of the 
+                    video itself. Sign Language may be the most steep <a href="#avenue"><span>avenue</span></a> of providing audio 
+                    accessibility to your website because it often requires having someone who knows 
+                    sign languages to translate your experience.
+                </p> <br><br><br>
+
+                <h3 id="Media-Player">Media Player</h3>
+                <p class="article_text">
+                    Making your own media playing and incorporating it into your website 
+                    is often challenging thus an excellent option is using a third-party web-based 
+                    media player. Some populars ones are <a href="https://ableplayer.github.io/ableplayer/"><span>Able Player</span></a> and <a href="https://videojs.com/"><span>video.js</span></a>.
+                </p> <br><br><br>
+
+                <h3 id="Vocab">Vocab</h3>
+                <p class="article_text">
+                    <span id="basic-transcripts">Basic Transcripts</span>: Transcripts contains text representation of audio but without text 
+                    representation of visual information like setting<br><br>
+                    <span id="descriptive-transcripts">Descriptive Transcripts</span>: Transcripts contains text representation of audio and text
+                    representation of visual information like setting <br><br>
+                    <span id="interactive transcripts">Interactive Transcripts</span>: Transcript that highlights text while audio is playing, also text acts 
+                    as timestamps on the video which the user can use to move thoughout the video.<br><br>
+                    <span id="transcribing">Transcribing</span>: Skill and Act of translating a form of media to a text representation.<br><br>
+                    <span id="paramount">Paramount</span>: Important.<br><br>
+                    <span id="auto-generated">Auto Generated</span>: Content generated by instructions rather than manually from humans.<br><br>
+                    <span id="avenue">Avenue</span>: A means to a end; a path<br><br>
+                    <span id="third-party">Third-Party</span>: Typically in a interaction between a client and a consumer, the third party is
+                    a group which provides services for the interaction but isn't affilated with either the client or consumer.
+                </p> <br><br><br>
+
+                <h3 id="Ref">References</h3>
+                <p class="article_text">
+                    <strong>Content</strong>
+                    <br>
+                    <ul>
+                        <li><span><a href="https://www.w3.org/WAI/media/av/">W3 Web Accessibility Initiative</a></span></li>           
+                        <li><span><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/hearing-loss/types-of-hearing-loss">"Types of Hearing Loss" by Hopkins Medicine</a></span></li>
+                        <li><span><a href="https://adasitecompliance.com/website-accessibility-for-deaf-and-hard-of-hearing/">"Website Accessibility for Deaf and Hard of Hearing" By Ada Site Compliance</a></span></li>          
+                    </ul>
+                    <br>
+                    <strong>Images</strong>
+                    <br>
+                    <ul>
+                        <li><span><a href="https://deaf-art.org/profiles/chuck-baird/">'Cup' by Chuck Baird</a></span></li>
+                    </ul>
+                    <strong>Media Players</strong>
+                    <br>
+                    <ul>
+                        <li><span><a href="https://ableplayer.github.io/ableplayer/">Able Player</a></span></li>
+                        <li><span><a href="https://videojs.com/">video.js</a></span></li>
+                    </ul>
+                    <br>
+                </p>
+            </div>
+        </main>
+        <script src="article.js"></script>
+    </body>
+</html>
