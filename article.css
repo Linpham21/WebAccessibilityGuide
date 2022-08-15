@@ -9,6 +9,7 @@
 html {
     font-size: 10px;
     background-color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 a {
@@ -19,22 +20,20 @@ a {
 
 header {
     width: 100%;
-    height: 6vh;
+    height: 6rem;
     padding-top: 1.5rem;
-    background-color: #666666;
+    background-color: #F5F5F5;
+    position: fixed;
 }
 
 /***** TOP NAV *****/
 
 #top-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-}
-
-#top-nav button {
-    width: 75px;
-    height: 25px;
+    padding-left: 30rem;
+    padding-right: 30rem;
 }
 
 #top-nav select {
@@ -45,23 +44,24 @@ header {
 
 #top-nav ul {
     display: flex;
-    width: 100%;
 }
 
 #top-nav li {
     list-style: none;
     font-size: 2rem;
     text-align: center;
+    align-items: flex-start;
 }
 
 #top-nav li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #1F1F1F;
 }
 
-#top-nav button {
-    background-color: #1b4965;
-    color: #ffffff;
+#top-nav li:hover {
+    text-decoration: underline;
+    text-underline-offset: 20%;
+    color: #000;
 }
 
 /***** MAIN *****/
@@ -73,7 +73,11 @@ body {
 
 main {
     display: flex;
-    height: 93vh;
+    height: 94vh;
+}
+
+#content h2 {
+    color: #767474;
 }
 
 /***** SIDE NAV *****/
@@ -82,13 +86,20 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    width: 12%;
-    background-color: #eeeeee;
+    align-items: left;
+    width: 300px;
+    background-color: #000000;
     height: 100%;
     z-index: 99;
-    padding-top: 100px;
-    transition-timing-function: ease;
+    padding-top: 50px;
+    color: #ffffff;
+    padding-left: 1.5rem;
+    position: fixed;
+}
+
+#side-nav h4 {
+    text-decoration: underline #B8DEE0 5px;
+    text-underline-offset: 20%;
 }
 
 #side-nav ul li {
@@ -96,12 +107,16 @@ main {
     margin: 2rem 0;
     height: 3rem;
     padding-left: 2rem;
+    padding-top: 2rem;
 }
 
 #side-nav ul li:hover {
-    border: solid #595959;
-    border-width: 0 0 0 3px;
+    /* border: solid #C1F4FF;
+    border-width: 0 0 0 3px; */
     font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 30%;
+    color: #b8dee0;
 } 
 
 #side-nav ul li a {
@@ -113,40 +128,100 @@ main {
     position: fixed;
     z-index: 1000;
     padding-left: 2rem;
+    margin-top: 0.8rem;
 }
 
+<<<<<<< HEAD
 /***** ACCESSIBILITY ASIDE *****/
+=======
+#color-toggle-btn {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: rgb(153, 153, 153);
+    color: #ffffff;
+    border: none;
+    margin-top: 1rem;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#color-toggle-btn:hover {
+    background-color: #1F1F1F;
+    border-radius: 5px;
+}
+>>>>>>> 5a389fef503da0b6331adb8839be17ebf3b14d08
 
 #access-btns {
-    width: 10%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 2rem;
 }
 
-#access-btns select {
-    margin-top: 1rem;
+#font-family-btns, #font-size-btns {
+    display: flex;
+    flex-direction: row;
 }
 
-#text-to-speech-btn {
-    height: 100px;
-    width: 100px;
+#font-family-btns button, #font-size-btns button {
+    height: 7.6rem;
+    width: 7.6rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
-#text-to-speech-btn img {
-    height: 80px;
-    width: 80px;
+#open-sans-btn {
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#georgia-btn {
+    font-family: Georgia, serif;
+}
+
+#arvo-btn {
+    font-family: 'Arvo';
+}
+
+#font-small-btn, #font-large-btn, #font-largest-btn {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #000;
+    color: #ffffff;
+}
+
+#font-small-btn:hover, #font-large-btn:hover, #font-largest-btn:hover {
+    background-color: #1F1F1F;
+    border-radius: 5px;
+}
+
+#open-sans-btn, #georgia-btn, #arvo-btn {
+    background-color: #000;
+    color: white;
+}
+
+#open-sans-btn:hover, #georgia-btn:hover, #arvo-btn:hover {
+    background-color: #1F1F1F;
+    border-radius: 5px;
+}
+
+#font-large-btn h5{
+    font-size: 2.6rem;
+}
+
+#font-largest-btn h5 {
+    font-size: 3rem;
 }
 
 /***** CONTENT SECTION *****/
 
 #content {
-    width: 85%;
-    padding: 6rem;
-    padding-top: 2rem;
+    padding: 7rem 30rem 5rem 5rem;
+    margin: 0rem 0rem 0rem 30rem;
+    height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    color: black;
+    width: 100%;
+    margin-left: 300px;
 }
 
 #content h2 {
@@ -158,10 +233,21 @@ main {
     padding: 1.5rem 0.5rem;
 }
 
+figcaption {
+    background-color: #dbd7d7;
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
 /***** FONTS AND HEADERS *****/
 
 h3 {
     font-size: 4rem;
+}
+
+#content h3 {
+    color: #767474;
 }
 
 h4 {
@@ -169,7 +255,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 a, a:visted, a:hover, a:active {
@@ -177,12 +263,68 @@ a, a:visted, a:hover, a:active {
 }
 
 span {
-    background-color: yellow;
+    background-color: #B8DEE0;
     text-decoration: underline dotted;
+    text-underline-offset: 2px;
 }
 
 /***** ETC *****/
 
 .hidden {
     display: none !important;
+}
+
+
+/***** SCROLL BAR *****/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* TABLES and Below*/
+@media only screen and (max-device-width : 1024px) {
+    #content {
+        margin: 0;
+        margin-top: 6vh;
+        padding: 5rem;
+        width: 100%;
+    }
+
+    #side-nav {
+        width: 600px;
+    }
+
+    html {
+        font-size: 20px;
+    }
+
+    #color-toggle-btn {
+        font-size: 1.5rem;
+    }
+
+    #top-nav {
+        padding-left: 3rem;
+        padding-right: 0rem;
+    }
+
+    #side-nav-arrow {
+        margin-top: 2rem;
+    }
+
+    #side-nav {
+        padding-top: 100px;
+    }
 }
