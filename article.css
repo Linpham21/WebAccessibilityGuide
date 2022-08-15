@@ -34,6 +34,7 @@ header {
     align-items: center;
     padding-left: 30rem;
     padding-right: 30rem;
+    z-index: 5;
 }
 
 #top-nav select {
@@ -209,8 +210,8 @@ main {
 /***** CONTENT SECTION *****/
 
 #content {
-    padding: 7rem 30rem 5rem 5rem;
-    margin: 0rem 0rem 0rem 30rem;
+    padding: 7rem 5rem 5rem 5rem;
+    margin: 0rem 0rem 0rem 0rem;
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
