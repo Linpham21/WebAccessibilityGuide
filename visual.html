@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Article Mockup </title>
+        <link rel="stylesheet" href="article.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav id="top-nav">
+                <select id="top-nav-drop-down" class="hidden">
+                    <option class="top_nav_bar_text" value="Home">Home</option>
+                    <option class="top_nav_bar_text" value="Accessibility Basics">Accessibility Basics</option>
+                    <option class="top_nav_bar_text" value="Audio Accessibility">Audio Accessibility</option>
+                    <option class="top_nav_bar_text" value="Visual Accessibility">Visual Accessibility</option>
+                </select>
+                <li><a href="#">Home &#8599</a></li>
+                <li><a href="#">Basics &#8599</a></li>
+                <li><a href="#">Visual &#8599</a></li>
+                <li><a href="#">Audio &#8599</a></li>
+                <li><a href="#">Motor &#8599</a></li>
+            </nav>
+        </header>
+
+        <main>
+            <div id="side-nav-arrow">
+                <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="40px"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"/></svg>
+            </div>
+
+            <nav id="side-nav">
+                <h4>Title of Article&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                <ul>
+                    <li><a href="#Fonts">Introduction</a></li>
+                    <li><a href="#Sizes">Color & Contrast</a></li>
+                    <li><a href="#Families">Layout</a></li>
+                    <li><a href="#Ref">Reference</a></li>
+                    <li><a href="#Vocab">Vocab</a></li>
+                    <li><a href="#Quiz">Quiz</a></li>
+                </ul>
+                <br><br>
+                <h4>Accessibility Tools</h4>
+                <div id="access-btns">
+                    <h5>Font Style</h5>
+                    <div id="font-family-btns">
+                        <button id="open-sans-btn">
+                            <h5>Ag</h5>
+                            <p>Open Sans</p>
+                        </button>
+                        <button id="georgia-btn">
+                            <h5>Ag</h5>
+                            <p>Georgia</p>
+                        </button>
+                        <button id="arvo-btn">
+                            <h5>Ag</h5>
+                            <p>Arvo</p>
+                        </button>
+                    </div>
+
+                    <h5>Font Size</h5>
+                    <div id="font-size-btns">
+                        <button id="font-small-btn">
+                            <h5>1x</h5>
+                            <p>Normal</p>
+                        </button>
+                        <button id="font-large-btn">
+                            <h5>1.3x</h5>
+                            <p>Larger</p>
+                        </button>
+                        <button id="font-largest-btn">
+                            <h5>1.5x</h5>
+                            <p>Largest</p>
+                        </button>
+                    </div>
+
+                    <h5>Theme</h5>
+                    <button class="mode_button_text" id="color-toggle-btn">Dark Mode</button>
+                </div>
+            </nav>
+            
+            <div id="content">
+                <h2 id="Fonts">Visual Accessibility</h2>
+                <p class="article_text">
+                    The different visual abilities and the diverse nature of impairments create a wide range of variations
+                    that a website design may be perceived. As such, it is important and beneficial for all users to have 
+                    designs that follow standardized criteria and are easy to navigate. A clean and clear visual 
+                    representation would allow visitors to feel at ease when exploring the website's information and
+                    functionality. 
+                </p>
+                <br><br><br>
+                <figure>
+                    <picture>
+                        <img src="https://wunder.io/wp-content/uploads/2020/09/2visual_accessibility_cover-scaled.jpg" alt="Web Accessibility" style="width:80%;">
+                    </picture>
+                    <figcaption>Image caption: An image with tri-color solid background, a magnifying glass, and large text saying "Visual Accessibility."</figcaption>
+                </figure> <br><br><br>
+
+                <h3 id="Sizes">Color & Contrast</h3>
+                <p class="article_text">
+                    For individuals with <span><a href="#colorblind">color blindness</a></span> and low vision, getting enough contrast between the text and
+                    background is essential.
+                    <br>
+                    <br>
+                    <strong>Steps to Take</strong>
+                    <br>
+                    <ul>
+                        <li>Contrast ratio between the text and background is recommended to be larger than 4.5:1 for small text and 3:1 for large text.</li>
+                        <ul>
+                            <li>Accessible color palettes and combinations: <span><a href="https://toolness.github.io/accessible-color-matrix/" target="_blank">Accessible Color Palette Builder</a></span>.</li>
+                            <li>A tool to measure contrasts between text and background: <span><a href="https://webaim.org/resources/contrastchecker/" target="_blank">WebAIM’s Color Contrast Checker</a></span>.</li>
+                        </ul>
+                        <li>Aim for a more temper contrast between your text and background: avoid using pure black with pure white for contrast.</li>
+                        <li>If there is text over an image, use a dark overlay over the image or add a solid background behind the text.</li>
+                        <li>A study has shown that warmer background shades improve <span><a href="#text-read">text-readability</a></span> with <span><a href="#dyslexia">dyslexia</a></span>.</li>
+                        <ul>
+                            <li>The research paper: <span><a href"https://www.cs.cmu.edu/~jbigham/pubs/pdfs/2017/colors.pdf" target="_blank">Good Background Colors for Readers: A Study of People with and without Dyslexia
+                                 </a></span></li>
+                        </ul>
+                        <li>Other than just color, use icons, words, and other visual elements to reinforce clear communication of the content</li>
+                    </ul>
+                    <strong><span><a href="#colorRef">References</a></span></strong>
+                    <br>
+                </p> <br><br><br>
+
+                <h3 id="Families">Layout</h3>
+                <p class="article_text">
+                    Having an information-overloaded website may be as undesirable as having no information on a page at all. For people with visual impairments and who are easily distracted,
+                    navigating through an information-dense website is even more challenging. Therefore, it is important to ensure the accessibility of a website by designing the layout to be clear
+                    and concise.
+                    <br>
+                    <br>
+                    <strong>Steps to Take</strong>
+                    <br>
+                    <ul>
+                        <li>Make key information discernable at a glance through clear headings, highlight of keywords, and so on.</li>
+                        <li>Design minimally, intentionally, and predictably so that users can easily and quickly find important information on the page.</li>
+                        <li>Place items on the screen according to their relative level of importance so that important actions are either at the top, bottom, or on a side navigation bar. This way, important items are more accessible.</li>
+                        <li>Give important actions and links <span><a href="#clickable">clickable cues</a></span>.</li>
+                        <li>Plan heading structure early and ensure that all content and design fits into a logical heading structure.</li>
+                        <li>Make sure reading order is consistent with visual order. Most common reading order is left-to-right.</li>
+                        <li>Group related items in proximity to one another to help those who have low vision or trouble focusing on the screen.</li>
+                    </ul>
+                    <strong><span><a href="#layoutRef">References</a></span></strong>
+                    <br>
+                </p> <br><br><br>
+
+                <h3 id="Ref">References</h3>
+                <p class="article_text">
+                    <strong id="colorRef">Color & Contrast</strong>
+                    <br>
+                    <ul>
+                        <li><span><a href="http://www.color-blindness.com/coblis-color-blindness-simulator/" target="_blank"></a>Color Blindness Simulator</a></span></li>
+                        <li>WCAG 2.0 references</li>
+                        <ul>
+                            <li><span><a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#contrast-minimum" target="_blank"></a>Guideline 1.4.3 – Contrast (Minimum)</a></span></li>
+                            <li><span><a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#use-of-color" target="_blank"></a>1.4.1 Use of Color</a></span></li>
+                        </ul>
+                        
+                    </ul>
+                    <br>
+                    <strong id="layoutRef">Layout</strong>
+                    <br>
+                    <ul>
+                        <li><span><a href="https://material.io/design/usability/accessibility.html" target="_blank"></a>Accessibility - Material Design</a></span></li>
+                        <li><span><a href="https://webaim.org/resources/designers/" target="_blank"></a>WebAIM: Web Accessibility for Designers</a></span></li>
+                        <li>WCAG 2.0 references</li>
+                        <ul>
+                            <li><span><a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#meaningful-sequence" target="_blank"></a>1.3.2 Meaningful Sequence</a></span></li>
+                            <li><span><a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#headings-and-labels" target="_blank"></a>2.4.6 Headings and Labels</a></span></li>
+                        </ul>
+                    </ul>
+                    <br>
+                </p> <br><br><br>
+
+                <h3 id="Vocab">Vocab</h3>
+                <p class="article_text">
+                    <span id="clickable">Clickable Cues</span>: a visual indication that a given word or item on a Web page is clickable. Cues that can be used to indicate the clickability of an item include color, underlining, bullets, and arrows. <br><br>
+                    <span id="colorblind">Color Blindness</span>: partial or total inability to distinguish one or more colors. <br><br>
+                    <span id="dyslexia">Dyslexia</span>: a general term for disorders that involve difficulty in learning to read or interpret words, letters, and other symbols, but that do not affect general intelligence. <br><br>
+                    <span id="text-read">Text-Readability</span>: a measure of how easy a piece of text is to read. <br><br>
+                </p> <br><br><br>
+
+                <h3 id="Quiz">Quiz</h3>
+                <p class="article_text">
+                    
+                </p>
+
+            </div>
+        </main>
+        <script src="article.js"></script>
+    </body>
+</html>
