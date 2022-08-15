@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Motor Accessibility </title>
+        <link rel="stylesheet" href="article.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav id="top-nav">
+                <select id="top-nav-drop-down" class="hidden">
+                    <option class="top_nav_bar_text" value="Home">Home</option>
+                    <option class="top_nav_bar_text" value="Accessibility Basics">Accessibility Basics</option>
+                    <option class="top_nav_bar_text" value="Audio Accessibility">Audio Accessibility</option>
+                    <option class="top_nav_bar_text" value="Visual Accessibility">Visual Accessibility</option>
+                </select>
+                <li><a href="#">Home &#8599</a></li>
+                <li><a href="#">Basics &#8599</a></li>
+                <li><a href="#">Visual &#8599</a></li>
+                <li><a href="#">Audio &#8599</a></li>
+                <li><a href="#">Motor &#8599</a></li>
+            </nav>
+        </header>
+
+        <main>
+            <div id="side-nav-arrow">
+                <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" height="40px"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"/></svg>
+            </div>
+
+            <nav id="side-nav">
+                <h4>Motor Accessibility</h4>
+                <ul>
+                    <li><a href="#Fonts">Introduction</a></li>
+                    <li><a href="#Sizes">Examples of barriers</a></li>
+                    <li><a href="#Families">Specialized tools</a></li>
+                    <li><a href="#Ref">References</a></li>
+                    <li><a href="#Vocab">Vocab</a></li>
+                    <li><a href="#Quiz">Quiz</a></li>
+                </ul>
+                <br><br>
+                <h4>Accessibility Tools</h4>
+                <div id="access-btns">
+                    <h5>Font Style</h5>
+                    <div id="font-family-btns">
+                        <button id="open-sans-btn">
+                            <h5>Ag</h5>
+                            <p>Open Sans</p>
+                        </button>
+                        <button id="georgia-btn">
+                            <h5>Ag</h5>
+                            <p>Georgia</p>
+                        </button>
+                        <button id="arvo-btn">
+                            <h5>Ag</h5>
+                            <p>Arvo</p>
+                        </button>
+                    </div>
+
+                    <h5>Font Size</h5>
+                    <div id="font-size-btns">
+                        <button id="font-small-btn">
+                            <h5>1x</h5>
+                            <p>Normal</p>
+                        </button>
+                        <button id="font-large-btn">
+                            <h5>1.3x</h5>
+                            <p>Larger</p>
+                        </button>
+                        <button id="font-largest-btn">
+                            <h5>1.5x</h5>
+                            <p>Largest</p>
+                        </button>
+                    </div>
+
+                    <h5>Theme</h5>
+                    <button class="mode_button_text" id="color-toggle-btn">Dark Mode</button>
+                </div>
+            </nav>
+            
+            <div id="content">
+                <h2 id="Fonts">Motor Accessibility</h2>
+                <p class="article_text">
+                    <span>Motor disabilities</span> (also called "physical disabilities") include muscular weakness and control issues (such as tremors, uncoordinated motions, or paralysis), sensory impairments, joint disorders (such as arthritis), discomfort that restricts motion, and amputation of limbs. <br>
+
+                    Congenital and acquired conditions are the main causes of physical impairments, which can be either transient or permanent in nature. Different methods and resources are available for physically disabled people to access the internet. They can have difficulties with the web design or content, making it challenging to access online information.
+                </p>
+                <figure>
+                    <picture>
+                        <img src="https://media.istockphoto.com/vectors/group-diverse-of-people-with-disabilities-work-together-in-office-vector-id1298415912?k=20&m=1298415912&s=612x612&w=0&h=LyGv9nGG01YMpwEvfVB0G_h3oJvIM9B_WWu73-GKhYE=" alt="A group of people with different physical disabilities." style="width:80%;">
+                    </picture>
+                    <figcaption>Image caption: A group of people with different physical disabilities.</figcaption>
+                </figure>
+
+                <p>
+                    For computer use, people with physical limitations might only use a keyboard or a keyboard-like device, or a mouse or a device that simulates a mouse. Keyboard support is necessary for people with physical limitations to use functionality on web pages. They might take longer to click, type, or engage in other interactions, and they might use single keystrokes in sequence rather than chording (typing many keystrokes at once) to execute commands. These keystrokes can be used to access active menu items, shortcuts, and special characters. <br><br>
+
+                    People with physical disabilities may have difficulty clicking in tight spaces and are more prone to typing and clicking errors. Large clickable areas, adequate task completion time, and form error correction options are all crucial design considerations. Providing clear signs of the current emphasis and including tools to skip over blocks like page headers or navigation bars are other crucial design elements. Many of these standards also apply to those with cognitive and visual impairments.
+                </p>
+
+                <h3 id="Sizes">Examples of barriers</h3>
+                <p class="article_text">
+                    Barriers to web accessibility for those with motor disabilities include:
+                    <ul>
+                        <li>Websites, web browsers, and authoring tools that do not provide full keyboard support</li>
+                        <li>Insufficient time limits to respond or to complete tasks, such as to fill out online forms</li>
+                        <li>Controls, such as links with text graphics, that do not provide text alternatives</li>
+                        <li>Missing visual and non-visual orientation cues, page structure, and other navigational aids</li>
+                        <li>Inconsistent, unpredictable, and overly complicated navigation mechanisms and page functions</li>
+                    </ul>
+                </p>
+
+                <h3 id="Families">Specialized hardware and software</h3>
+                <figure>
+                    <picture>
+                        <img src="https://miro.medium.com/max/800/1*KndD0pTUyTHI8p9-f_u_6g.png" alt="Voice recognition" style="width:80%;">
+                    </picture>
+                    <figcaption>Image caption: Sound waves passing through a microphone, turning into text, indicating web voice recognition.</figcaption>
+                </figure> 
+                <p class="article_text">
+                    There are many specialized tools available that people living with motor disabilities can utilize for web navigation, including:
+                    <ul>
+                        <li>Ergonomic or specially designed keyboard or mouse</li>
+                        <li>Head pointer, mouth stick, and other aids to help with typing</li>
+                        <li>On-screen keyboard with trackball, joysticks, or other pointing devices</li>
+                        <li>Switches operated by foot, shoulder, sip-and-puff, or other movements</li>
+                        <li>Voice recognition, eye tracking, and other approaches for hands-free interaction</li>
+                    </ul>
+                </p>
+
+                <h3 id="Ref">References</h3>
+                <p class="article_text">
+                    <a href="https://www.w3.org/WAI/people-use-web/abilities-barriers/">WAI Diverse Abilities and Barriers</a><br>
+                    <a href="https://medium.com/nyc-design/web-accessibility-for-physical-or-motor-impairments-4fe5e170e375">Web accessibility for physical or motor impairments</a><br>
+                    <a href="https://www.inclusionhub.com/articles/making-website-accessible-physical-disabilities">Making Your Website More Accessible for People With Physical Disabilities</a><br>
+                    <a href="https://uxdesign.cc/tips-on-designing-inclusively-for-physical-disabilities-72473140c6dd">Tips on designing inclusively for physical disabilities</a><br>
+                    <a href="https://bestwebsiteaccessibility.com/guides/web-accessibility-for-people-living-with-physical-disabilities/">Web Accessibility for People living with Physical Disabilities</a>
+                </p>
+
+                <h3 id="Vocab">Vocab</h3>
+                <p class="article_text">
+                    <span>Amputation</span>: comprises the loss of fingers, limbs, or other body parts<br><br>
+                    <span>Arthritis</span> (previously called "rheumatism"): an inflammatory, degenerative, or destructive condition of the joints<br><br>
+                    <span>Fibromyalgia</span> (previously called "rheumatism"): the chronic pain condition affecting the muscles and connective tissues<br><br>
+                    <span>Rheumatism</span>: typically refers to arthritis and other conditions that produce pain in the bones or joints, but it can also apply to fibromyalgia and other conditions that cause pain in the muscles and other soft tissues<br><br>
+                    <span>Reduced dexterity</span>: a functional term used to describe the ability to control the hand, such as hand-eye coordination of people with cognitive and neurological disabilities<br><br>
+                    <span>Muscular dystrophy</span>: muscle degeneration and gradual weakness; can occasionally affect the hands and arms<br><br>
+                    <span>Repetitive stress injury</span> (RSI) (also called "repetitive motion disorder" (RMD) and "cumulative trauma disorder" (CT)): caused by repeated stress on the neurological system and musculoskeletal system (bones, joints, tendons, and other connective tissues)<br><br>
+                    <span>Tremor and spasms</span>: involuntary movements or muscular contractions, such as brief twitches and ongoing or regular muscle contractions<br><br>
+                    <span>Quadriplegia</span> (also called "tetraplegia"): a partial or complete paralysis that affects the torso, legs, arms, and both motor and sensory functions
+                </p> <br><br><br>
+
+                <h3 id="Quiz">Quiz</h3>
+                <p class="article_text">
+                    See Google doc for quiz questions and answers.
+                </p>
+
+            </div>
+        </main>
+        <script src="article.js"></script>
+    </body>
+</html>
