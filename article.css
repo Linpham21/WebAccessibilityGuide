@@ -131,6 +131,9 @@ main {
     margin-top: 0.8rem;
 }
 
+<<<<<<< HEAD
+/***** ACCESSIBILITY ASIDE *****/
+=======
 #color-toggle-btn {
     width: 10rem;
     height: 2.5rem;
@@ -145,6 +148,7 @@ main {
     background-color: #1F1F1F;
     border-radius: 5px;
 }
+>>>>>>> 5a389fef503da0b6331adb8839be17ebf3b14d08
 
 #access-btns {
     display: flex;

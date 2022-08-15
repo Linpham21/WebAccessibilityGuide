@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+     
+    <!--fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:semibold" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Niramit' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:light' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <nav id="top-nav">
+            <select id="top-nav-drop-down" class="hidden">
+                <option class="top_nav_bar_text" value="Home">Home</option>
+                <option class="top_nav_bar_text" value="Accessibility Basics">Accessibility Basics</option>
+                <option class="top_nav_bar_text" value="Audio Accessibility">Audio Accessibility</option>
+                <option class="top_nav_bar_text" value="Visual Accessibility">Visual Accessibility</option>
+            </select>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Accessibility Basics</a></li>
+            <li><a href="#">Visual Accessibility</a></li>
+            <li><a href="#">Audio Accessibility</a></li>
+            <li><a href="#">Motor Accessibility</a></li>
+            <button class="mode_button_text" id="color-toggle-btn">Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="accessibilityHeader">
+            <div id="anotherContainer">
+                <h1 id="firstLine">Being more accessible.</h1>
+                <h1 id="secondLine">Learn how in web dev.</h1>
+                <div id="accessibilityImgContainer">
+                        <img id="accessibilityImg" src="imgs/correct.png" alt="Image of all types of people, 
+                ranging from different accessibility identities">
+            
+                </div>
+                <div id="containerForWords">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="homePage_btn">
+            <a href="article.html"><button type="button" id="omePage_btn">LEARN MORE</button></a>
+        </div>
+
+        <div id="content">
+            <p id="HomePageText">
+                When websites and web tools are <i>properly designed</i> and <i>coded</i>, people with disabilities 
+                can <b>use them</b>. However, when web developers <b>are not aware</b> of how they can make their websites 
+                and tools accessible, there may be <i>barriers</i> that make websites <b>difficult or impossible</b> for some 
+                people to use. There are many types of web accessibility, such as motor accessibility, visual 
+                accessibility, and audio accessibility. Explore our website to <a href="article.html"><u>learn more</u></a>.
+            </p>
+        </div>
+
+    </main>
+    <script src="article.js"></script>
+</body>
+</html>

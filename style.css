@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    background-color: white;
+}
+
+a {
+    all: unset;
+}
+
+/***** HEADER *****/
+
+header {
+    width: 100%;
+    height: 6vh;
+    padding-top: 1.5rem;
+    background-color: #666666;
+}
+
+/***** TOP NAV *****/
+
+#top-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#top-nav button {
+    width: 75px;
+    height: 25px;
+}
+
+#top-nav select {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+}
+
+#top-nav ul {
+    display: flex;
+    width: 100%;
+}
+
+#top-nav li {
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#top-nav li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#top-nav button {
+    background-color: #1b4965;
+    color: #ffffff;
+}
+
+/***** MAIN *****/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+
+}
+
+
+/***** CONTENT SECTION *****/
+
+/*Accessibility Banner*/
+
+#accessibilityHeader {
+    width: 100%;
+}
+
+#anotherContainer {
+    width: 100%;
+    position: relative;
+
+    
+}
+#accessibilityImgContainer{
+    width: auto;
+    height: auto;
+    order: 0;
+}
+
+#accessibilityImg {
+    padding-top: 10vh;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+#accessibilityHeader h1 {
+    font-family: 'Niramit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 83px;
+    color: #1f1717;
+}
+
+
+#firstLine {
+    position: absolute;
+    font-size: 3.3vw;
+    left: 30px;
+    /*!*/top: 100px;
+    
+
+    /* identical to box height */
+    text-align: center;
+}
+
+#secondLine {
+    position: absolute;
+    font-size: 3.3vw;
+    right: 45px;
+    bottom: -5px;
+    text-align: center;
+}
+
+
+/*Button -> Articles*/
+
+#homePage_btn button{
+    margin: 4vw;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    /**Position**/
+    text-align: center;
+
+
+    /**Size**/
+    width: 20vw;
+    height: 6vw;
+
+    /**Decorate**/
+    background: #0c0c0c;
+    border: 0.1vmax solid #DCDCDC;
+    box-shadow: 0px 0.2vmax 0.2vmax rgba(0, 0, 0, 0.25);
+    border-radius: 2vmax;
+    box-sizing: border-box;
+
+    /**Font Details**/
+    font-family:'Open Sans', sans-serif;
+    font-weight: semibold;
+    font-size: 1.8vmax;
+    color: white;
+}
+
+
+#homePage_btn button:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+
+/* Introduction Text */
+#content{
+    align-items: flex-end;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-bottom: 10vh;
+
+}
+
+#HomePageText {
+    /**Decoration**/
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 2vmax;
+    line-height: 3.5vw;
+    text-align: center;
+    color: #676767;
+}
+
+
