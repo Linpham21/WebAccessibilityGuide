@@ -34,6 +34,7 @@ header {
     align-items: center;
     padding-left: 30rem;
     padding-right: 30rem;
+    z-index: 5;
 }
 
 #top-nav select {
