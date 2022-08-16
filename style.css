@@ -9,6 +9,7 @@
 html {
     font-size: 10px;
     background-color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 a {
@@ -23,7 +24,9 @@ header {
     padding-top: 1.5rem;
     background-color: #F5F5F5;
     position: fixed;
+    z-index: 5;
 }
+
 
 /***** TOP NAV *****/
 
@@ -31,8 +34,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-left: 30rem;
-    padding-right: 30rem;
+    z-index: 5;
 }
 
 #top-nav select {
@@ -92,9 +94,8 @@ main {
 #anotherContainer {
     width: 100%;
     position: relative;
-
-    
 }
+
 #accessibilityImgContainer{
     width: auto;
     height: auto;
@@ -118,11 +119,11 @@ main {
     font-style: normal;
     font-weight: 600;
     line-height: 83px;
-    color: #1f1717;
 }
 
 
 #firstLine {
+    color: #534242;
     position: absolute;
     font-size: 3.3vw;
     left: 30px;
@@ -134,13 +135,29 @@ main {
 }
 
 #secondLine {
+    color: #534242;
     position: absolute;
     font-size: 3.3vw;
     right: 45px;
-    bottom: -5px;
+    bottom: 20px;
     text-align: center;
 }
 
+
+#title {
+    border-radius: 8px;
+    color:rgb(0, 0, 0);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.69) 50%, rgba(123, 123, 120, 0.69) 50%);
+    position: absolute;
+    font-size: 4.5vw;
+    left: 190px;
+    /*!*/top: 28vmax;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0.1vw;
+    padding-bottom: 0.1vw;
+    
+}
 
 /*Button -> Articles*/
 
@@ -196,4 +213,47 @@ main {
     color: #676767;
 }
 
+
+/* TABLES and Below*/
+@media only screen and (max-device-width : 1024px) {
+    #content {
+        margin: 0;
+        margin-top: 6vh;
+        padding: 5rem;
+        width: 100%;
+    }
+
+    html {
+        font-size: 20px;
+    }
+
+    #color-toggle-btn {
+        font-size: 1.5rem;
+    }
+
+    #top-nav {
+        padding-left: 3rem;
+        padding-right: 0rem;
+    }
+}
+
+
+/*Other*/
+
+.hidden {
+    display: none !important;
+}
+
+
+footer {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 1vmax;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(250, 250, 250, 0.69);
+    color: rgb(0, 0, 0);
+    text-align: center; 
+}
 

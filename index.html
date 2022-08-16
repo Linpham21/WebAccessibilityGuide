@@ -18,26 +18,28 @@
 <body>
     <header>
         <nav id="top-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Accessibility Basics</a></li>
-            <li><a href="#">Visual Accessibility</a></li>
-            <li><a href="#">Audio Accessibility</a></li>
-            <li><a href="#">Motor Accessibility</a></li>
-            <button class="mode_button_text" id="color-toggle-btn">Dark Mode</button>
+            <select id="top-nav-drop-down" class="hidden">
+                <option class="top_nav_bar_text" value="Home">Home</option>
+                <option class="top_nav_bar_text" value="Accessibility Basics">Accessibility Basics</option>
+                <option class="top_nav_bar_text" value="Audio Accessibility">Audio Accessibility</option>
+                <option class="top_nav_bar_text" value="Visual Accessibility">Visual Accessibility</option>
+            </select>
+            <li><a href="index.html">Home &#8599</a></li>
+            <li><a href="basic.html">Basics &#8599</a></li>
+            <li><a href="visual.html">Visual &#8599</a></li>
+            <li><a href="audio.html">Audio &#8599</a></li>
+            <li><a href="motor.html">Motor &#8599</a></li>
         </nav>
     </header>
-
     <main>
         <div id="accessibilityHeader">
             <div id="anotherContainer">
                 <h1 id="firstLine">Being more accessible.</h1>
+                <h1 id="title">/*The Web Accessibility Guide*/</h1>
                 <h1 id="secondLine">Learn how in web dev.</h1>
                 <div id="accessibilityImgContainer">
                         <img id="accessibilityImg" src="imgs/correct.png" alt="Image of all types of people, 
                 ranging from different accessibility identities">
-            
-                </div>
-                <div id="containerForWords">
                 </div>
             </div>
 
@@ -58,7 +60,12 @@
             </p>
         </div>
 
+        <footer>
+            <p>Created by <a href="https://www.computingforall.org/"><u>Computing For All</u></a> students: Gary, Winnie, Linh, Chloe, Elsabeth, & Emmanuel </p>
+        </footer>
+
     </main>
+
     <script src="article.js"></script>
 </body>
 </html>
