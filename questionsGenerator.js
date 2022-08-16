@@ -1,6 +1,6 @@
 
 const questionContainer = document.querySelector('.quiz-container')
-const scrollContainer = document.querySelector('.scroll-container')
+// const scrollContainer = document.querySelector('.scroll-container')
 
 let visualQuestions = [
     {
@@ -42,7 +42,7 @@ function init() {
     newQuestionContainer.innerHTML =
     `
     
-                        <h1 class="subtitle content">${question.prompt}</h1>
+                        <p class="content">${question.prompt}</p>
                         <div class="button-container">
                             <button class="quiz-button buttonPrimary">
                                 <h1 class="content quiz-button-text">A</h1>
@@ -65,10 +65,10 @@ function init() {
     `
 
     
-    let newQuestionNavItem = document.createElement('li') 
-    newQuestionNavItem.className = 'nav-item backgroundPrimary textPrimary'
-    newQuestionNavItem.textContent = question.prompt
-    newQuestionNavItem.addEventListener('click',  (e) => snapTo(e,newQuestionContainer))
+    // let newQuestionNavItem = document.createElement('li') 
+    // newQuestionNavItem.className = 'nav-item backgroundPrimary textPrimary'
+    // newQuestionNavItem.textContent = question.prompt
+    // newQuestionNavItem.addEventListener('click',  (e) => snapTo(e,newQuestionContainer))
     questionContainer.appendChild(newQuestionContainer)
 })
 }
