@@ -16,6 +16,10 @@ a {
     all: unset;
 }
 
+.flex-container {
+    display: flex;
+}
+
 /***** HEADER *****/
 
 header {

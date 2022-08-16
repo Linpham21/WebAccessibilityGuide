@@ -13,6 +13,7 @@ let headings = document.querySelectorAll("#content h3");
 let bigger_headings = document.querySelector("#content h2");
 let spans = document.querySelectorAll("#content span");
 let caption_background = document.querySelectorAll("figcaption");
+let results = document.querySelector('google maps')
 let html = document.querySelector("html");
 
 let transcript_example = document.querySelector("#transcript-example");
