@@ -16,6 +16,8 @@ let caption_background = document.querySelectorAll("figcaption");
 let results = document.querySelector('google maps')
 let html = document.querySelector("html");
 
+let transcript_example = document.querySelector("#transcript-example");
+
 let darkOn = false;
 
 let dark = {
@@ -84,6 +86,10 @@ let toggleDarkMode = function () {
 
     for (let i = 0; i < caption_background.length; i++) {
         caption_background[i].style.backgroundColor = currentColorMode.caption_background;
+    }
+
+    if (transcript_example) {
+        transcript_example.style.backgroundColor = currentColorMode.top_nav_bar;
     }
 }
 

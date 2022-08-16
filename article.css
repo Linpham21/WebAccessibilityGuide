@@ -100,7 +100,7 @@ main {
     color: #ffffff;
     padding-left: 1.5rem;
     position: fixed;
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 #side-nav h4 {
@@ -259,6 +259,15 @@ figcaption {
     padding: 1.5rem;
 }
 
+#transcript-example {
+    width: 80%;
+    background-color: #F5F5F5;
+}
+
+#transcript-example h5 {
+    color: #b8dee0;
+}
+
 /***** FONTS AND HEADERS *****/
 
 h3 {
@@ -320,6 +329,10 @@ span {
         margin-top: 6vh;
         padding: 5rem;
         width: 100%;
+    }
+
+    #content h2 {
+        font-size: 12vw;
     }
 
     #side-nav {
