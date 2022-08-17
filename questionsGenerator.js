@@ -4,8 +4,43 @@ const questionContainer = document.querySelector('.quiz-container')
 var resultsContainer = document.getElementById('results');
 var refreshButton = document.getElementById('refresh-button');
 
-let visualQuestions = [
+let allQuestions = {
+    audio: [{
+        prompt: 'Which of these elements will not enhance audio accessibility of your webpage?',
+        answers: ['Transcripts', 'Captions', 'Sign Language', 'Screen Readers'],
+        rightAnswer: 3
+    },
     {
+        prompt: 'Which accurately describes Deaf people?',
+        answers: [
+            'People who have recently lost the ability to hear',
+            'People who are temporarily lost the ability to hear',
+            'Those who were born deaf and have been deaf for most of their lives',
+            'All of the above accurately describe Deaf people'
+        ],
+        rightAnswer: 2
+    },
+    {
+        prompt: 'If you want to be more audio accessible, which of the following is best suited?',
+        answers: [
+            'Add visual elements that describe audio elements',
+            'Add audio elements that describe visual elements',
+            'Add alternative methods of navigation for those who can’t use a keyboard and/or mouse',
+            'Make a video showcasing the entire experience of your website and embed that video in your website'
+        ],
+        rightAnswer: 0
+    },
+    {
+        prompt: 'Because of technology advancements, auto generated captions are accurate and reliable.',
+        answers: [
+            'True',
+            'False', 
+            'It depends', 
+            'I don\'t know'
+        ],
+        rightAnswer: 1
+    }],
+    visual: [{
         prompt: 'What is the optimal contrast ratio between text and background for large text?',
         answers: ['1:1', '4.5:1', '3:1', '3.5:1'],
         rightAnswer: 2
@@ -39,11 +74,55 @@ let visualQuestions = [
             'Using color to highlight key ideas may confuse users'
         ],
         rightAnswer: 2
+    }],
+    motor: [{
+        prompt: 'Which of the following is an example of a web accessibility barrier for people with physical disabilities?',
+        answers: [
+            'Full keyboard support for websites, browsers, and authoring tools',
+            'Insufficient time limits to respond or to complete tasks',
+            'Text alternatives to links and graphics', 
+            'Good visual and non-visual orientation cues and page structure'
+        ],
+        rightAnswer: 1
     },
-]
+    {
+        prompt: 'Which of the following is an example of good web design for people with physical disabilities?',
+        answers: [
+            'Inadequate task completion time',
+            'No clear signs of the current emphasis',
+            'Large clickable areas',
+            'No form error correction options'
+        ],
+        rightAnswer: 2
+    },
+    {
+        prompt: 'What is another term for repetitive stress injury (RSI)?',
+        answers: [
+            'Repetitive motion disorder (RMD)',
+            'Rheumatism',
+            'Quadriplegia',
+            'Reduced dexterity'
+        ],
+        rightAnswer: 0
+    },
+    {
+        prompt: 'What is one way to make web content more inclusive and accessible?',
+        answers: [
+            'Ensuring that the website appears and operates in unpredictable ways',
+            'Designing content that could cause seizures', 
+            'Ensuring that text content is readable and understandable', 
+            'Using an illogical tab order for navigation'
+        ],
+        rightAnswer: 2
+    }]
+}
 
-function init() {
-    visualQuestions.forEach((question, i) => {
+
+
+
+function init(type) {
+    let questionType = allQuestions[type];
+    questionType.forEach((question, i) => {
     let newQuestionContainer = document.createElement('section')
     newQuestionContainer.className = 'multiple-choice-container'
     let buttonContainer = document.createElement('div')
@@ -54,7 +133,7 @@ function init() {
     newQuestionContainer.innerHTML =
     `
     
-                        <p class="content">${question.prompt}</p>
+                        <p class="content quiz-question-box">${question.prompt}</p>
 
                     
     `
@@ -92,7 +171,7 @@ function createQuizButtons(question, i, buttonContainer) {
         let quizButton = document.createElement('button')
         quizButton.className = 'quiz-button button-primary'
         quizButton.innerHTML = `
-            <h1 class="content quiz-button-text">${letters.charAt(j)}</h1>
+            <h1 class="content quiz-button-icon">${letters.charAt(j)}</h1>
             <h1 class="content quiz-button-text">${question.answers[j]}</h1>
         `
 
@@ -118,7 +197,7 @@ refreshButton.onclick = function() {
 // function snapTo(e,element) {
 //     element.scrollIntoView({ behavior: 'smooth', block: "center"})
 // }
-window.addEventListener('DOMContentLoaded', init)
+
 
 // function clearStatusClass(element) {
 //     element.classList.remove('correct');

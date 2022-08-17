@@ -3,6 +3,7 @@
     <head>
         <title> Audio Accessibility </title>
         <link rel="stylesheet" href="article.css" />
+        <link rel="stylesheet" href="quiz.css" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
@@ -33,6 +34,7 @@
                     <li><a href="#Media-Player">Media Player</a></li>
                     <li><a href="#Vocab">Vocab</a></li>
                     <li><a href="#Ref">References</a></li>
+                    <li><a href="#Quiz">Quiz</a></li>
                 </ul>
                 <br><br>
                 <h4>Accessibility Tools</h4>
@@ -221,8 +223,18 @@
                     </ul>
                     <br>
                 </p>
+                <h3 id="Quiz">Quiz</h3>
+                <section class="quiz-container"></section>
+                <div class="flex-container">
+                    <div id="results">results</div>
+                    <button id="refresh-button">Refresh</button>
+                </div>
             </div>
-        </main>
         <script src="article.js"></script>
+        <script src="questionsGenerator.js"></script>
+        <script>
+            let initPage = function(){init("audio")};
+            window.addEventListener('DOMContentLoaded', initPage);
+        </script>
     </body>
 </html>
