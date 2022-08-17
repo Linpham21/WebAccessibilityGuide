@@ -137,6 +137,10 @@ main {
     margin-top: 0.8rem;
 }
 
+#side-nav::-webkit-scrollbar {
+    display: none;
+}
+
 
 #color-toggle-btn {
     width: 10rem;

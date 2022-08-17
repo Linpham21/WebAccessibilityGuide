@@ -114,7 +114,7 @@ background-color: #3a8;
     /*width: calc(100vw - 300px);*/
     scroll-snap-type: y mandatory;
     scroll-snap-points-y: repeat(100vh);
-    height: 500px;
+    height: 400px;
 }
 
 .quiz-container > section {
@@ -152,6 +152,9 @@ a {
     transition: 200ms;
     transform: scale(1.2);
 }
+ .quiz-container::-webkit-scrollbar {
+    display: none;
+  }
 
 
 
