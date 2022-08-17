@@ -181,9 +181,39 @@ a {
         font-size:calc(8px + 1.5vw);
     }
 
+    .quiz-button {
+        min-width: 100px;
+    }
+
     #results {
         font-size:calc(6px + 1.0vw);
     }
 }
 
+@media only screen and (min-device-width : 1024px) {
+   
+    .multiple-choice-container {
+        width: 75%;
+    }
+
+    .quiz-button-text {
+        font-size:1vw;
+    }
+
+    .quiz-button {
+        min-width: 100px;
+    }
+
+    #refresh-button {
+        min-width: 15%;
+        height: 5rem;
+        font-size:1vw;
+        overflow: hidden;
+    }
+
+    #results {
+        font-size:1vw;
+        overflow: hidden;
+    }
+}
 
