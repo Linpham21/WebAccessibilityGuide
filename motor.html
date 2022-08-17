@@ -3,6 +3,7 @@
     <head>
         <title> Motor Accessibility </title>
         <link rel="stylesheet" href="article.css" />
+        <link rel="stylesheet" href="quiz.css" />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
@@ -145,12 +146,17 @@
                 </p> <br><br><br>
 
                 <h3 id="Quiz">Quiz</h3>
-                <p class="article_text">
-                    See Google doc for quiz questions and answers.
-                </p>
-
+                <section class="quiz-container"></section>
+                <div class="flex-container">
+                    <div id="results">results</div>
+                    <button id="refresh-button">Refresh</button>
+                </div>
             </div>
-        </main>
         <script src="article.js"></script>
+        <script src="questionsGenerator.js"></script>
+        <script>
+            let initPage = function(){init("motor")};
+            window.addEventListener('DOMContentLoaded', initPage);
+        </script>
     </body>
 </html>
